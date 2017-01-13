@@ -65,16 +65,16 @@ class HousesViewController: UIViewController {
                               "What was Robert's main weapon in battle?",
                               "Who founded House Baratheon?"]
     var baratheonAnswers =
-        [["Robert I", "Renly", "Stannis"],
-         ["Avenge Lyanna's Disappearance","Murder of his father", "For power"],
-         ["Prince Rhaegar", "Daemon Blackfyre","Viserys"],
-         ["Robert's bastard", "A squire", "Lord of Harrenhal"],
-         ["Stag", "Bear", "Horse"],
-         ["Lady Olenna", "Tyrion", "Robb Stark", "Melissandre"],
-         ["300 years old", "3,000 years old", "20 years old"],
-         ["Stormlands","Riverlands","Vale"],
-         ["War hammer", "Valyrian sword", "Ax", "Wildfire"],
-         ["Orys", "Borros", "Robar"]]
+                      [["Robert I", "Renly", "Stannis"],
+                      ["Avenge Lyanna's Disappearance","Murder of his father", "For power"],
+                      ["Prince Rhaegar", "Daemon Blackfyre","Viserys"],
+                      ["Robert's bastard", "A squire", "Lord of Harrenhal"],
+                      ["Stag", "Bear", "Horse"],
+                      ["Lady Olenna", "Tyrion", "Robb Stark", "Melissandre"],
+                      ["300 years old", "3,000 years old", "20 years old"],
+                      ["Stormlands","Riverlands","Vale"],
+                      ["War hammer", "Valyrian sword", "Ax", "Wildfire"],
+                      ["Orys", "Borros", "Robar"]]
     
     var lannisterQuestions = ["Who founded House Lannister?",
                               "Who is the current ruler of House Lannister?",
@@ -122,13 +122,12 @@ class HousesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+ 
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+           }
     
 
 }
