@@ -1,0 +1,346 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8F5049CB1E21E64B00A46856 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5049CA1E21E64B00A46856 /* AppDelegate.swift */; };
+		8F5049CD1E21E64B00A46856 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5049CC1E21E64B00A46856 /* ViewController.swift */; };
+		8F5049D31E21E64B00A46856 /* WesterosWhiz.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8F5049D11E21E64B00A46856 /* WesterosWhiz.xcdatamodeld */; };
+		8F5049D51E21E64B00A46856 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F5049D41E21E64B00A46856 /* Assets.xcassets */; };
+		8F5049D81E21E64B00A46856 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F5049D61E21E64B00A46856 /* LaunchScreen.storyboard */; };
+		8F5049EA1E22026400A46856 /* targaryenDragons.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F5049E91E22026400A46856 /* targaryenDragons.png */; };
+		8F5049EC1E22078B00A46856 /* starkLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F5049EB1E22078B00A46856 /* starkLogo.png */; };
+		8F5049EE1E22079600A46856 /* lannisterLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F5049ED1E22079600A46856 /* lannisterLogo.png */; };
+		8F5049F01E22079C00A46856 /* baratheonStag.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F5049EF1E22079C00A46856 /* baratheonStag.png */; };
+		8F5049F21E220A8100A46856 /* targaryen1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F5049F11E220A8100A46856 /* targaryen1.png */; };
+		8F5049F41E2210CA00A46856 /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F5049F31E2210CA00A46856 /* circle.png */; };
+		8F5049FA1E25DA0300A46856 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F5049F91E25DA0300A46856 /* Main.storyboard */; };
+		8F5049FE1E25ED1200A46856 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5049FD1E25ED1200A46856 /* ScoreViewController.swift */; };
+		8F504A001E26B2F400A46856 /* HousesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5049FF1E26B2F400A46856 /* HousesViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8F5049C71E21E64B00A46856 /* WesterosWhiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WesterosWhiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F5049CA1E21E64B00A46856 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8F5049CC1E21E64B00A46856 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8F5049D21E21E64B00A46856 /* WesterosWhiz.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WesterosWhiz.xcdatamodel; sourceTree = "<group>"; };
+		8F5049D41E21E64B00A46856 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8F5049D71E21E64B00A46856 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8F5049D91E21E64B00A46856 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F5049E91E22026400A46856 /* targaryenDragons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = targaryenDragons.png; sourceTree = "<group>"; };
+		8F5049EB1E22078B00A46856 /* starkLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = starkLogo.png; sourceTree = "<group>"; };
+		8F5049ED1E22079600A46856 /* lannisterLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lannisterLogo.png; sourceTree = "<group>"; };
+		8F5049EF1E22079C00A46856 /* baratheonStag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = baratheonStag.png; sourceTree = "<group>"; };
+		8F5049F11E220A8100A46856 /* targaryen1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = targaryen1.png; sourceTree = "<group>"; };
+		8F5049F31E2210CA00A46856 /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle.png; sourceTree = "<group>"; };
+		8F5049F91E25DA0300A46856 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		8F5049FD1E25ED1200A46856 /* ScoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
+		8F5049FF1E26B2F400A46856 /* HousesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HousesViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8F5049C41E21E64B00A46856 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8F5049BE1E21E64B00A46856 = {
+			isa = PBXGroup;
+			children = (
+				8F5049C91E21E64B00A46856 /* WesterosWhiz */,
+				8F5049C81E21E64B00A46856 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8F5049C81E21E64B00A46856 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8F5049C71E21E64B00A46856 /* WesterosWhiz.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8F5049C91E21E64B00A46856 /* WesterosWhiz */ = {
+			isa = PBXGroup;
+			children = (
+				8F5049CA1E21E64B00A46856 /* AppDelegate.swift */,
+				8F5049CC1E21E64B00A46856 /* ViewController.swift */,
+				8F5049FF1E26B2F400A46856 /* HousesViewController.swift */,
+				8F5049FD1E25ED1200A46856 /* ScoreViewController.swift */,
+				8F5049F91E25DA0300A46856 /* Main.storyboard */,
+				8F5049D41E21E64B00A46856 /* Assets.xcassets */,
+				8F5049D61E21E64B00A46856 /* LaunchScreen.storyboard */,
+				8F5049F31E2210CA00A46856 /* circle.png */,
+				8F5049EF1E22079C00A46856 /* baratheonStag.png */,
+				8F5049ED1E22079600A46856 /* lannisterLogo.png */,
+				8F5049EB1E22078B00A46856 /* starkLogo.png */,
+				8F5049E91E22026400A46856 /* targaryenDragons.png */,
+				8F5049F11E220A8100A46856 /* targaryen1.png */,
+				8F5049D91E21E64B00A46856 /* Info.plist */,
+				8F5049D11E21E64B00A46856 /* WesterosWhiz.xcdatamodeld */,
+			);
+			path = WesterosWhiz;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8F5049C61E21E64B00A46856 /* WesterosWhiz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F5049DC1E21E64B00A46856 /* Build configuration list for PBXNativeTarget "WesterosWhiz" */;
+			buildPhases = (
+				8F5049C31E21E64B00A46856 /* Sources */,
+				8F5049C41E21E64B00A46856 /* Frameworks */,
+				8F5049C51E21E64B00A46856 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WesterosWhiz;
+			productName = WesterosWhiz;
+			productReference = 8F5049C71E21E64B00A46856 /* WesterosWhiz.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8F5049BF1E21E64B00A46856 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Ehsan Zaman";
+				TargetAttributes = {
+					8F5049C61E21E64B00A46856 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 8F5049C21E21E64B00A46856 /* Build configuration list for PBXProject "WesterosWhiz" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8F5049BE1E21E64B00A46856;
+			productRefGroup = 8F5049C81E21E64B00A46856 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8F5049C61E21E64B00A46856 /* WesterosWhiz */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8F5049C51E21E64B00A46856 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F5049EA1E22026400A46856 /* targaryenDragons.png in Resources */,
+				8F5049D81E21E64B00A46856 /* LaunchScreen.storyboard in Resources */,
+				8F5049FA1E25DA0300A46856 /* Main.storyboard in Resources */,
+				8F5049D51E21E64B00A46856 /* Assets.xcassets in Resources */,
+				8F5049F41E2210CA00A46856 /* circle.png in Resources */,
+				8F5049EE1E22079600A46856 /* lannisterLogo.png in Resources */,
+				8F5049EC1E22078B00A46856 /* starkLogo.png in Resources */,
+				8F5049F01E22079C00A46856 /* baratheonStag.png in Resources */,
+				8F5049F21E220A8100A46856 /* targaryen1.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8F5049C31E21E64B00A46856 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F5049CD1E21E64B00A46856 /* ViewController.swift in Sources */,
+				8F5049FE1E25ED1200A46856 /* ScoreViewController.swift in Sources */,
+				8F504A001E26B2F400A46856 /* HousesViewController.swift in Sources */,
+				8F5049CB1E21E64B00A46856 /* AppDelegate.swift in Sources */,
+				8F5049D31E21E64B00A46856 /* WesterosWhiz.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8F5049D61E21E64B00A46856 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F5049D71E21E64B00A46856 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8F5049DA1E21E64B00A46856 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8F5049DB1E21E64B00A46856 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8F5049DD1E21E64B00A46856 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WesterosWhiz/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ehsanzaman.WesterosWhiz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		8F5049DE1E21E64B00A46856 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WesterosWhiz/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ehsanzaman.WesterosWhiz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8F5049C21E21E64B00A46856 /* Build configuration list for PBXProject "WesterosWhiz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F5049DA1E21E64B00A46856 /* Debug */,
+				8F5049DB1E21E64B00A46856 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F5049DC1E21E64B00A46856 /* Build configuration list for PBXNativeTarget "WesterosWhiz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F5049DD1E21E64B00A46856 /* Debug */,
+				8F5049DE1E21E64B00A46856 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8F5049D11E21E64B00A46856 /* WesterosWhiz.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8F5049D21E21E64B00A46856 /* WesterosWhiz.xcdatamodel */,
+			);
+			currentVersion = 8F5049D21E21E64B00A46856 /* WesterosWhiz.xcdatamodel */;
+			path = WesterosWhiz.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8F5049BF1E21E64B00A46856 /* Project object */;
+}
