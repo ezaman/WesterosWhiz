@@ -152,13 +152,16 @@ class HousesViewController: UIViewController {
     }
     
     func backgroundVideo() {
-        let imageData = NSData(contentsOf: Bundle.main.url(forResource: "got1", withExtension: "gif")!)
+        let imageData = NSData(contentsOf: Bundle.main.url(forResource: "got2", withExtension: "gif")!)
         
         let imageGif = UIImage.gifWithData(imageData! as Data)
         
         let imageView = UIImageView(image: imageGif)
         
-        imageView.frame = CGRect(x: 0.0, y: 0.0, width: 375.0, height: 667.0)
+        imageView.frame = CGRect(x: -130.0, y: 0.0, width: 630.0, height: 667.0)
+      //  imageView.contentMode = UIViewContentMode.scaleAspectFit
+       // imageView.clipsToBounds = true
+        
         imageView.alpha = 0.4
         view.addSubview(imageView)
     }
