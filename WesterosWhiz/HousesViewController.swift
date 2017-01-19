@@ -12,7 +12,9 @@ class HousesViewController: UIViewController {
 
     @IBOutlet weak var highScore: UILabel!
     var highscore = Int()
-    var highestscore = Int()
+    var highestscore = 0
+    
+    var defaults = UserDefaults.standard
     
     
     var starkQuestions = ["Where is Winterfell?",
@@ -129,15 +131,27 @@ class HousesViewController: UIViewController {
         super.viewDidLoad()
         
         if (highscore >= highestscore) {
-        highScore.text = "\(highestscore)"
-        
-        
- 
-    }
 
+            highestscore = highscore
+        
+            defaults.set(highestscore, forKey: "HighScore")
+        }else {
+            highestscore = 0
+            highScore.text = "\(highestscore)"
+            defaults.set(highestscore, forKey: "HighScore")
+        }
+        
+        let finalHighScore = defaults.string(forKey: "HighScore")
+        
+        highScore.text = "\(finalHighScore!)"
+        
+        
+    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
            }
     
-
+    
 }
