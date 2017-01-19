@@ -12,9 +12,9 @@ class HousesViewController: UIViewController {
 
     @IBOutlet weak var highScore: UILabel!
     var highscore = Int()
-    var highestscore = 0
+    var highestscore = Int()
     
-    var defaults = UserDefaults.standard
+    //var defaults = UserDefaults.standard
     
     
     var starkQuestions = ["Where is Winterfell?",
@@ -42,7 +42,7 @@ class HousesViewController: UIViewController {
     var targQuestions = ["Who is Aegon the Conqueror?",
                          "How many dragons does Daenerys have?",
                          "Who was Aerys II's hand?",
-                         "Which of Dany's dragons is the largest?",
+                         "Which of Daenerys' dragons is the largest?",
                          "What kingdom does Daenerys currently rule?",
                          "How many Targaryens sat on the Iron Throne?",
                          "Who killed Aerys II?",
@@ -87,8 +87,8 @@ class HousesViewController: UIViewController {
                               "Who is the current ruler of House Lannister?",
                               "What is the Lannister ancestral seat?",
                               "What is the Lannister sigil?",
-                              "What is the official motto",
-                              "Who is the heir of House Lannister",
+                              "What is the official house motto?",
+                              "Who is the heir of House Lannister?",
                               "How large is the Lannister army?",
                               "Who killed Tywin Lannister?",
                               "What is the Lannister sword name?",
@@ -129,25 +129,39 @@ class HousesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      
+        backgroundVideo()
         
-        if (highscore >= highestscore) {
+        if highscore > highestscore {
 
             highestscore = highscore
-        
-            defaults.set(highestscore, forKey: "HighScore")
-        }else {
-            highestscore = 0
-            highScore.text = "\(highestscore)"
-            defaults.set(highestscore, forKey: "HighScore")
+          
         }
         
-        let finalHighScore = defaults.string(forKey: "HighScore")
+
+        let defaults = UserDefaults.standard
+        defaults.set(highestscore, forKey: "HighScore")
         
-        highScore.text = "\(finalHighScore!)"
+        if let finalHighScore = defaults.object(forKey: "HighScore") {
         
+        highScore.text = "\(finalHighScore)"
+        
+        }
+        defaults.synchronize()
         
     }
     
+    func backgroundVideo() {
+        let imageData = NSData(contentsOf: Bundle.main.url(forResource: "got1", withExtension: "gif")!)
+        
+        let imageGif = UIImage.gifWithData(imageData! as Data)
+        
+        let imageView = UIImageView(image: imageGif)
+        
+        imageView.frame = CGRect(x: 0.0, y: 0.0, width: 375.0, height: 667.0)
+        imageView.alpha = 0.4
+        view.addSubview(imageView)
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -21,6 +21,8 @@
 		8F5049FA1E25DA0300A46856 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F5049F91E25DA0300A46856 /* Main.storyboard */; };
 		8F5049FE1E25ED1200A46856 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5049FD1E25ED1200A46856 /* ScoreViewController.swift */; };
 		8F504A001E26B2F400A46856 /* HousesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5049FF1E26B2F400A46856 /* HousesViewController.swift */; };
+		8F65470D1E30A5720082A517 /* gifFramework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F65470C1E30A5720082A517 /* gifFramework.swift */; };
+		8F65470F1E30A5BD0082A517 /* got1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8F65470E1E30A5BD0082A517 /* got1.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		8F5049F91E25DA0300A46856 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		8F5049FD1E25ED1200A46856 /* ScoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
 		8F5049FF1E26B2F400A46856 /* HousesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HousesViewController.swift; sourceTree = "<group>"; };
+		8F65470C1E30A5720082A517 /* gifFramework.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = gifFramework.swift; sourceTree = "<group>"; };
+		8F65470E1E30A5BD0082A517 /* got1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = got1.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +79,9 @@
 				8F5049CA1E21E64B00A46856 /* AppDelegate.swift */,
 				8F5049CC1E21E64B00A46856 /* ViewController.swift */,
 				8F5049FF1E26B2F400A46856 /* HousesViewController.swift */,
+				8F65470C1E30A5720082A517 /* gifFramework.swift */,
 				8F5049FD1E25ED1200A46856 /* ScoreViewController.swift */,
+				8F65470E1E30A5BD0082A517 /* got1.gif */,
 				8F5049F91E25DA0300A46856 /* Main.storyboard */,
 				8F5049D41E21E64B00A46856 /* Assets.xcassets */,
 				8F5049D61E21E64B00A46856 /* LaunchScreen.storyboard */,
@@ -123,6 +129,7 @@
 				TargetAttributes = {
 					8F5049C61E21E64B00A46856 = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -157,6 +164,7 @@
 				8F5049F41E2210CA00A46856 /* circle.png in Resources */,
 				8F5049EE1E22079600A46856 /* lannisterLogo.png in Resources */,
 				8F5049EC1E22078B00A46856 /* starkLogo.png in Resources */,
+				8F65470F1E30A5BD0082A517 /* got1.gif in Resources */,
 				8F5049F01E22079C00A46856 /* baratheonStag.png in Resources */,
 				8F5049F21E220A8100A46856 /* targaryen1.png in Resources */,
 			);
@@ -170,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F5049CD1E21E64B00A46856 /* ViewController.swift in Sources */,
+				8F65470D1E30A5720082A517 /* gifFramework.swift in Sources */,
 				8F5049FE1E25ED1200A46856 /* ScoreViewController.swift in Sources */,
 				8F504A001E26B2F400A46856 /* HousesViewController.swift in Sources */,
 				8F5049CB1E21E64B00A46856 /* AppDelegate.swift in Sources */,
