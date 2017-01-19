@@ -10,6 +10,11 @@ import UIKit
 
 class HousesViewController: UIViewController {
 
+    @IBOutlet weak var highScore: UILabel!
+    var highscore = Int()
+    var highestscore = Int()
+    
+    
     var starkQuestions = ["Where is Winterfell?",
                           "What is the Stark sigil?",
                           "What is the Stark house sword?",
@@ -119,9 +124,14 @@ class HousesViewController: UIViewController {
         }
         
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        if (highscore >= highestscore) {
+        highScore.text = "\(highestscore)"
+        
+        
  
     }
 

@@ -13,6 +13,17 @@ class ScoreViewController: UIViewController {
     @IBOutlet weak var scoreLabel: UILabel!
     
     var finalScore = ""
+    var score = Int()
+
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "highScore" {
+            let VC = segue.destination as! HousesViewController
+           VC.highscore = score
+
+            
+        }
+    }
     
     
     override func viewDidLoad() {

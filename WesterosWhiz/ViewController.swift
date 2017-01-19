@@ -41,17 +41,24 @@ class NewViewController: UIViewController {
     var currentQuestion = 0
     var answerPlacement:UInt32 = 0
     var score = 0
+  
     
     override func viewWillAppear(_ animated: Bool) {
         score = 0
         currentQuestion = 0
         nextQuestion()
+     
+        
+    
+    
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        nextQuestion()
+       // nextQuestion()
+        
     }
+    
     
     
 
@@ -63,6 +70,7 @@ class NewViewController: UIViewController {
             let VC = segue.destination as! ScoreViewController
             
             VC.finalScore = "\(score + 1) / \(questions.count)"
+            VC.score = score + 1
             
         }
     }
