@@ -12,6 +12,8 @@ class ScoreViewController: UIViewController {
 
     @IBOutlet weak var scoreLabel: UILabel!
     
+    @IBOutlet weak var playAgain: UIButton!
+   
     var finalScore = ""
     var score = Int()
 
@@ -29,6 +31,9 @@ class ScoreViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         scoreLabel.text = "\(finalScore)"
+
+        playAgain.layer.cornerRadius = 5
+        
 
         // Do any additional setup after loading the view.
     }

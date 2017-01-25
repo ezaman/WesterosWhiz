@@ -14,6 +14,7 @@ class NewViewController: UIViewController {
     
  //scenario for whenever a button is tapped, ensuring it is not the last. If it is, segue to total score
     @IBAction func buttons(_ sender: UIButton) {
+    
         
         if sender.tag == Int(answerPlacement) && currentQuestion < 10 {
             score += 1
@@ -32,6 +33,11 @@ class NewViewController: UIViewController {
     }
   
 
+    @IBOutlet weak var btn1: UIButton!
+    @IBOutlet weak var btn2: UIButton!
+    @IBOutlet weak var btn3: UIButton!
+    
+    
     @IBOutlet weak var QuestionLabel: UILabel!
     
     var questions: [String] = []
@@ -47,8 +53,9 @@ class NewViewController: UIViewController {
         score = 0
         currentQuestion = 0
         nextQuestion()
-     
-        
+        btn1.layer.cornerRadius = 6
+        btn2.layer.cornerRadius = 6
+        btn3.layer.cornerRadius = 6
     
     
     }
