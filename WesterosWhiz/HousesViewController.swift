@@ -152,18 +152,35 @@ class HousesViewController: UIViewController {
     }
     
     func backgroundVideo() {
-        let imageData = NSData(contentsOf: Bundle.main.url(forResource: "got2", withExtension: "gif")!)
-        
+        let imageData = NSData(contentsOf: Bundle.main.url(forResource: "dragons2", withExtension: "gif")!)
+     
         let imageGif = UIImage.gifWithData(imageData! as Data)
-        
+
         let imageView = UIImageView(image: imageGif)
         
-        imageView.frame = CGRect(x: -130.0, y: 0.0, width: 630.0, height: 667.0)
-      //  imageView.contentMode = UIViewContentMode.scaleAspectFit
-       // imageView.clipsToBounds = true
+        imageView.frame = CGRect(x: 0.0, y: 0.0, width: 475.0, height: 667.0)
+        imageView.contentMode = UIViewContentMode.scaleAspectFill
+        imageView.clipsToBounds = true
         
-        imageView.alpha = 0.4
+        imageView.alpha = 0.25
+        //imageView.backgroundColor = UIColor.lightGray
         view.addSubview(imageView)
+        
+        
+//        let filePath = Bundle.main.path(forResource: "got3", ofType: "gif")
+//        let gif = NSData(contentsOfFile: filePath!)
+//        
+//        let webViewBG = UIWebView(frame: self.view.frame)
+//        webViewBG.load(gif! as Data, mimeType: "image/gif", textEncodingName: String(), baseURL: NSURL() as URL)
+//        
+//        webViewBG.isUserInteractionEnabled = false;
+//        self.view.addSubview(webViewBG)
+//        
+//        let filter = UIView()
+//        filter.frame = self.view.frame
+//        //filter.backgroundColor = UIColor.black
+//        filter.alpha = 0.01
+//        self.view.addSubview(filter)
     }
     
     override func didReceiveMemoryWarning() {
