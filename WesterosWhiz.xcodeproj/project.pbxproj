@@ -12,26 +12,16 @@
 		8F5049D31E21E64B00A46856 /* WesterosWhiz.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8F5049D11E21E64B00A46856 /* WesterosWhiz.xcdatamodeld */; };
 		8F5049D51E21E64B00A46856 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F5049D41E21E64B00A46856 /* Assets.xcassets */; };
 		8F5049D81E21E64B00A46856 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F5049D61E21E64B00A46856 /* LaunchScreen.storyboard */; };
-		8F5049EA1E22026400A46856 /* targaryenDragons.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F5049E91E22026400A46856 /* targaryenDragons.png */; };
 		8F5049EC1E22078B00A46856 /* starkLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F5049EB1E22078B00A46856 /* starkLogo.png */; };
 		8F5049EE1E22079600A46856 /* lannisterLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F5049ED1E22079600A46856 /* lannisterLogo.png */; };
 		8F5049F01E22079C00A46856 /* baratheonStag.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F5049EF1E22079C00A46856 /* baratheonStag.png */; };
 		8F5049F21E220A8100A46856 /* targaryen1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F5049F11E220A8100A46856 /* targaryen1.png */; };
-		8F5049F41E2210CA00A46856 /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F5049F31E2210CA00A46856 /* circle.png */; };
 		8F5049FA1E25DA0300A46856 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F5049F91E25DA0300A46856 /* Main.storyboard */; };
 		8F5049FE1E25ED1200A46856 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5049FD1E25ED1200A46856 /* ScoreViewController.swift */; };
 		8F504A001E26B2F400A46856 /* HousesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5049FF1E26B2F400A46856 /* HousesViewController.swift */; };
 		8F65470D1E30A5720082A517 /* gifFramework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F65470C1E30A5720082A517 /* gifFramework.swift */; };
-		8F65470F1E30A5BD0082A517 /* got1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8F65470E1E30A5BD0082A517 /* got1.gif */; };
-		8F6547111E30B1F80082A517 /* got2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8F6547101E30B1F80082A517 /* got2.gif */; };
-		8F6547131E316F0E0082A517 /* got3.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8F6547121E316F0E0082A517 /* got3.gif */; };
 		8F6547151E3180220082A517 /* dragons2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8F6547141E3180220082A517 /* dragons2.gif */; };
 		8F6547171E31896C0082A517 /* Lannister_2-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F6547161E31896C0082A517 /* Lannister_2-01.png */; };
-		8F6547191E318C470082A517 /* black_stark.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F6547181E318C470082A517 /* black_stark.png */; };
-		8F65471B1E318C830082A517 /* black_lann.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F65471A1E318C830082A517 /* black_lann.png */; };
-		8F65471D1E318CAA0082A517 /* black_targ.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F65471C1E318CAA0082A517 /* black_targ.png */; };
-		8F65471F1E318D070082A517 /* newblackstark.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F65471E1E318D070082A517 /* newblackstark.png */; };
-		8F6547211E3194420082A517 /* starks.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F6547201E3194420082A517 /* starks.png */; };
 		8F6547231E3195700082A517 /* targLast.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F6547221E3195700082A517 /* targLast.png */; };
 		8F6547251E319E820082A517 /* starkNew.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F6547241E319E820082A517 /* starkNew.png */; };
 		8F6547271E319E990082A517 /* barNew.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F6547261E319E990082A517 /* barNew.png */; };
@@ -45,26 +35,16 @@
 		8F5049D41E21E64B00A46856 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F5049D71E21E64B00A46856 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F5049D91E21E64B00A46856 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8F5049E91E22026400A46856 /* targaryenDragons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = targaryenDragons.png; sourceTree = "<group>"; };
 		8F5049EB1E22078B00A46856 /* starkLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = starkLogo.png; sourceTree = "<group>"; };
 		8F5049ED1E22079600A46856 /* lannisterLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lannisterLogo.png; sourceTree = "<group>"; };
 		8F5049EF1E22079C00A46856 /* baratheonStag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = baratheonStag.png; sourceTree = "<group>"; };
 		8F5049F11E220A8100A46856 /* targaryen1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = targaryen1.png; sourceTree = "<group>"; };
-		8F5049F31E2210CA00A46856 /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle.png; sourceTree = "<group>"; };
 		8F5049F91E25DA0300A46856 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		8F5049FD1E25ED1200A46856 /* ScoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
 		8F5049FF1E26B2F400A46856 /* HousesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HousesViewController.swift; sourceTree = "<group>"; tabWidth = 4; wrapsLines = 0; };
 		8F65470C1E30A5720082A517 /* gifFramework.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = gifFramework.swift; sourceTree = "<group>"; };
-		8F65470E1E30A5BD0082A517 /* got1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = got1.gif; sourceTree = "<group>"; };
-		8F6547101E30B1F80082A517 /* got2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = got2.gif; sourceTree = "<group>"; };
-		8F6547121E316F0E0082A517 /* got3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = got3.gif; sourceTree = "<group>"; };
 		8F6547141E3180220082A517 /* dragons2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = dragons2.gif; sourceTree = "<group>"; };
 		8F6547161E31896C0082A517 /* Lannister_2-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lannister_2-01.png"; sourceTree = "<group>"; };
-		8F6547181E318C470082A517 /* black_stark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = black_stark.png; sourceTree = "<group>"; };
-		8F65471A1E318C830082A517 /* black_lann.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = black_lann.png; sourceTree = "<group>"; };
-		8F65471C1E318CAA0082A517 /* black_targ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = black_targ.png; sourceTree = "<group>"; };
-		8F65471E1E318D070082A517 /* newblackstark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newblackstark.png; sourceTree = "<group>"; };
-		8F6547201E3194420082A517 /* starks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = starks.png; sourceTree = "<group>"; };
 		8F6547221E3195700082A517 /* targLast.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = targLast.png; sourceTree = "<group>"; };
 		8F6547241E319E820082A517 /* starkNew.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = starkNew.png; sourceTree = "<group>"; };
 		8F6547261E319E990082A517 /* barNew.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = barNew.png; sourceTree = "<group>"; };
@@ -105,28 +85,18 @@
 				8F5049FF1E26B2F400A46856 /* HousesViewController.swift */,
 				8F65470C1E30A5720082A517 /* gifFramework.swift */,
 				8F5049FD1E25ED1200A46856 /* ScoreViewController.swift */,
-				8F65470E1E30A5BD0082A517 /* got1.gif */,
-				8F6547101E30B1F80082A517 /* got2.gif */,
-				8F6547121E316F0E0082A517 /* got3.gif */,
 				8F6547141E3180220082A517 /* dragons2.gif */,
 				8F5049F91E25DA0300A46856 /* Main.storyboard */,
 				8F5049D41E21E64B00A46856 /* Assets.xcassets */,
 				8F5049D61E21E64B00A46856 /* LaunchScreen.storyboard */,
-				8F6547181E318C470082A517 /* black_stark.png */,
-				8F65471A1E318C830082A517 /* black_lann.png */,
-				8F5049F31E2210CA00A46856 /* circle.png */,
 				8F5049EF1E22079C00A46856 /* baratheonStag.png */,
 				8F6547221E3195700082A517 /* targLast.png */,
 				8F5049ED1E22079600A46856 /* lannisterLogo.png */,
 				8F5049EB1E22078B00A46856 /* starkLogo.png */,
-				8F6547201E3194420082A517 /* starks.png */,
-				8F65471E1E318D070082A517 /* newblackstark.png */,
 				8F6547161E31896C0082A517 /* Lannister_2-01.png */,
 				8F6547261E319E990082A517 /* barNew.png */,
 				8F6547241E319E820082A517 /* starkNew.png */,
-				8F5049E91E22026400A46856 /* targaryenDragons.png */,
 				8F5049F11E220A8100A46856 /* targaryen1.png */,
-				8F65471C1E318CAA0082A517 /* black_targ.png */,
 				8F5049D91E21E64B00A46856 /* Info.plist */,
 				8F5049D11E21E64B00A46856 /* WesterosWhiz.xcdatamodeld */,
 			);
@@ -193,27 +163,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F5049EA1E22026400A46856 /* targaryenDragons.png in Resources */,
-				8F6547131E316F0E0082A517 /* got3.gif in Resources */,
 				8F6547251E319E820082A517 /* starkNew.png in Resources */,
 				8F5049D81E21E64B00A46856 /* LaunchScreen.storyboard in Resources */,
 				8F5049FA1E25DA0300A46856 /* Main.storyboard in Resources */,
-				8F65471D1E318CAA0082A517 /* black_targ.png in Resources */,
 				8F6547231E3195700082A517 /* targLast.png in Resources */,
 				8F5049D51E21E64B00A46856 /* Assets.xcassets in Resources */,
-				8F5049F41E2210CA00A46856 /* circle.png in Resources */,
-				8F65471B1E318C830082A517 /* black_lann.png in Resources */,
 				8F6547171E31896C0082A517 /* Lannister_2-01.png in Resources */,
 				8F5049EE1E22079600A46856 /* lannisterLogo.png in Resources */,
-				8F6547211E3194420082A517 /* starks.png in Resources */,
-				8F6547191E318C470082A517 /* black_stark.png in Resources */,
 				8F6547151E3180220082A517 /* dragons2.gif in Resources */,
 				8F5049EC1E22078B00A46856 /* starkLogo.png in Resources */,
 				8F6547271E319E990082A517 /* barNew.png in Resources */,
-				8F65470F1E30A5BD0082A517 /* got1.gif in Resources */,
-				8F65471F1E318D070082A517 /* newblackstark.png in Resources */,
 				8F5049F01E22079C00A46856 /* baratheonStag.png in Resources */,
-				8F6547111E30B1F80082A517 /* got2.gif in Resources */,
 				8F5049F21E220A8100A46856 /* targaryen1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
