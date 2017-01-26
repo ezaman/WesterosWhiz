@@ -15,10 +15,17 @@ class NewViewController: UIViewController {
  //scenario for whenever a button is tapped, ensuring it is not the last. If it is, segue to total score
     @IBAction func buttons(_ sender: UIButton) {
     
+    
+//        UIView.animate(withDuration: 0.1, animations:{
+//            self.btn1.frame.size.width = self.btn1.frame.size.width + 10
+//            self.btn1.frame.size.height = self.btn1.frame.size.height + 10
+//           
+//        })
         
         if sender.tag == Int(answerPlacement) && currentQuestion < 10 {
-            score += 1
             
+            
+            score += 1
             nextQuestion()
             
         } else if (sender.tag != Int(answerPlacement)) && currentQuestion < 10 {
