@@ -15,6 +15,7 @@ class NewViewController: UIViewController {
  //scenario for whenever a button is tapped, ensuring it is not the last. If it is, segue to total score
     @IBAction func buttons(_ sender: UIButton) {
     
+        //add animation
     
 //        UIView.animate(withDuration: 0.1, animations:{
 //            self.btn1.frame.size.width = self.btn1.frame.size.width + 10
