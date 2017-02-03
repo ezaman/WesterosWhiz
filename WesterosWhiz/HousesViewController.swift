@@ -11,9 +11,16 @@ import UIKit
 class HousesViewController: UIViewController {
 
     @IBOutlet weak var highScore: UILabel!
-    var highscore = Int()
+    @IBOutlet weak var scoreLabel: UILabel!
+    
+    var score = Int()
     var highestscore = Int()
     
+    @IBAction func resetAction(_ sender: Any) {
+        score = 0
+        scoreLabel.text = "\(score)"
+        
+    }
     //var defaults = UserDefaults.standard
     
     
@@ -129,12 +136,14 @@ class HousesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        scoreLabel.text = "\(score)"
       
         backgroundVideo()
         
-        if highscore > highestscore {
+        if score > highestscore {
 
-            highestscore = highscore
+            highestscore = score
           
         }
         
@@ -142,9 +151,9 @@ class HousesViewController: UIViewController {
         let defaults = UserDefaults.standard
         defaults.set(highestscore, forKey: "HighScore")
         
-        if let finalHighScore = defaults.object(forKey: "HighScore") {
-        
-        highScore.text = "\(finalHighScore)"
+        if (defaults.value(forKey: "HighScore") != nil) {
+        highestscore = defaults.value(forKey: "HighScore") as! Int
+        highScore.text = String(format: "%i", highestscore)
         
         }
         defaults.synchronize()

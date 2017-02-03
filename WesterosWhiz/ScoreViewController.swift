@@ -16,12 +16,13 @@ class ScoreViewController: UIViewController {
    
     var finalScore = ""
     var score = Int()
-
+    var highscore = Int()
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "highScore" {
             let VC = segue.destination as! HousesViewController
-           VC.highscore = score
+           VC.score = score
+
 
             
         }
@@ -30,7 +31,7 @@ class ScoreViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        scoreLabel.text = "\(finalScore)"
+        scoreLabel.text = "\(score)"
 
         playAgain.layer.cornerRadius = 5
         
