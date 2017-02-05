@@ -9,12 +9,13 @@
 import UIKit
 
 class HousesViewController: UIViewController {
-
+    
     @IBOutlet weak var highScore: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
     
     var score = Int()
-    var highestscore = Int()
+    var highscore = Int()
+    var realhighscore = Int()
     
     @IBAction func resetAction(_ sender: Any) {
         score = 0
@@ -79,16 +80,16 @@ class HousesViewController: UIViewController {
                               "What was Robert's main weapon in battle?",
                               "Who founded House Baratheon?"]
     var baratheonAnswers =
-                      [["Robert I", "Renly", "Stannis"],
-                      ["Avenge Lyanna's Disappearance","Murder of his father", "For power"],
-                      ["Prince Rhaegar", "Daemon Blackfyre","Viserys"],
-                      ["Robert's bastard", "A squire", "Lord of Harrenhal"],
-                      ["Stag", "Bear", "Horse"],
-                      ["Lady Olenna", "Tyrion", "Robb Stark", "Melissandre"],
-                      ["300 years old", "3,000 years old", "20 years old"],
-                      ["Stormlands","Riverlands","Vale"],
-                      ["War hammer", "Valyrian sword", "Ax", "Wildfire"],
-                      ["Orys", "Borros", "Robar"]]
+        [["Robert I", "Renly", "Stannis"],
+         ["Avenge Lyanna's Disappearance","Murder of his father", "For power"],
+         ["Prince Rhaegar", "Daemon Blackfyre","Viserys"],
+         ["Robert's bastard", "A squire", "Lord of Harrenhal"],
+         ["Stag", "Bear", "Horse"],
+         ["Lady Olenna", "Tyrion", "Robb Stark", "Melissandre"],
+         ["300 years old", "3,000 years old", "20 years old"],
+         ["Stormlands","Riverlands","Vale"],
+         ["War hammer", "Valyrian sword", "Ax", "Wildfire"],
+         ["Orys", "Borros", "Robar"]]
     
     var lannisterQuestions = ["Who founded House Lannister?",
                               "Who is the current ruler of House Lannister?",
@@ -138,23 +139,25 @@ class HousesViewController: UIViewController {
         super.viewDidLoad()
         
         scoreLabel.text = "\(score)"
-      
+        
         backgroundVideo()
         
-        if score > highestscore {
-
-            highestscore = score
-          
+        
+        let defaults = UserDefaults.standard
+        
+        DispatchQueue.main.async {
+        if self.score > self.realhighscore {
+            self.realhighscore = self.score
+            defaults.set(self.realhighscore, forKey: "realScore")
+            defaults.synchronize()
+            
         }
         
-
-        let defaults = UserDefaults.standard
-        defaults.set(highestscore, forKey: "HighScore")
+        }
         
-        if (defaults.value(forKey: "HighScore") != nil) {
-        highestscore = defaults.value(forKey: "HighScore") as! Int
-        highScore.text = String(format: "%i", highestscore)
-        
+        if (defaults.value(forKey: "realScore") != nil) {
+            self.realhighscore = defaults.object(forKey: "realScore") as! Int
+            self.highScore.text = String(format: "%i", self.realhighscore)
         }
         defaults.synchronize()
         
@@ -162,9 +165,9 @@ class HousesViewController: UIViewController {
     
     func backgroundVideo() {
         let imageData = NSData(contentsOf: Bundle.main.url(forResource: "dragons2", withExtension: "gif")!)
-     
+        
         let imageGif = UIImage.gifWithData(imageData! as Data)
-
+        
         let imageView = UIImageView(image: imageGif)
         
         imageView.frame = CGRect(x: 0.0, y: 0.0, width: 475.0, height: 667.0)
@@ -176,25 +179,25 @@ class HousesViewController: UIViewController {
         view.addSubview(imageView)
         
         
-//        let filePath = Bundle.main.path(forResource: "got3", ofType: "gif")
-//        let gif = NSData(contentsOfFile: filePath!)
-//        
-//        let webViewBG = UIWebView(frame: self.view.frame)
-//        webViewBG.load(gif! as Data, mimeType: "image/gif", textEncodingName: String(), baseURL: NSURL() as URL)
-//        
-//        webViewBG.isUserInteractionEnabled = false;
-//        self.view.addSubview(webViewBG)
-//        
-//        let filter = UIView()
-//        filter.frame = self.view.frame
-//        //filter.backgroundColor = UIColor.black
-//        filter.alpha = 0.01
-//        self.view.addSubview(filter)
+        //        let filePath = Bundle.main.path(forResource: "got3", ofType: "gif")
+        //        let gif = NSData(contentsOfFile: filePath!)
+        //
+        //        let webViewBG = UIWebView(frame: self.view.frame)
+        //        webViewBG.load(gif! as Data, mimeType: "image/gif", textEncodingName: String(), baseURL: NSURL() as URL)
+        //
+        //        webViewBG.isUserInteractionEnabled = false;
+        //        self.view.addSubview(webViewBG)
+        //
+        //        let filter = UIView()
+        //        filter.frame = self.view.frame
+        //        //filter.backgroundColor = UIColor.black
+        //        filter.alpha = 0.01
+        //        self.view.addSubview(filter)
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-           }
+    }
     
     
 }

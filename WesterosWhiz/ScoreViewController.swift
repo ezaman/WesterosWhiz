@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class ScoreViewController: UIViewController {
 
     @IBOutlet weak var scoreLabel: UILabel!
@@ -17,15 +18,17 @@ class ScoreViewController: UIViewController {
     var finalScore = ""
     var score = Int()
     var highscore = Int()
+   
+
+        
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "highScore" {
             let VC = segue.destination as! HousesViewController
            VC.score = score
+          // VC.highscore = score
+            }
 
-
-            
-        }
     }
     
     
@@ -35,9 +38,22 @@ class ScoreViewController: UIViewController {
 
         playAgain.layer.cornerRadius = 5
         
+//        if score > highscore {
+//        let defaults = UserDefaults.standard
+//        
+//
+//        }
 
-        // Do any additional setup after loading the view.
-    }
+
+        print(score)
+      
+
+         }
+
+           
+
+
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

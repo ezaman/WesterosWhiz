@@ -27,6 +27,7 @@ class NewViewController: UIViewController {
             
             
             score += 1
+           
             nextQuestion()
             
         } else if (sender.tag != Int(answerPlacement)) && currentQuestion < 10 {
@@ -54,23 +55,48 @@ class NewViewController: UIViewController {
     
     var currentQuestion = 0
     var answerPlacement:UInt32 = 0
-    var score = 0
-  
+    var score = Int()
+    var highscore = Int()
+    
     
     override func viewWillAppear(_ animated: Bool) {
-        score = 0
+        //score = 0
         currentQuestion = 0
         nextQuestion()
         btn1.layer.cornerRadius = 6
         btn2.layer.cornerRadius = 6
         btn3.layer.cornerRadius = 6
-    
+        
+    //    let defaultss = UserDefaults.standard
+        
+   //     highscore = defaultss.object(forKey: "highScore") as! Int
+        
+//        let defaults = UserDefaults.standard
+//        defaults.set(highscore, forKey: "HighScore")
+//        
+//        if (defaults.value(forKey: "HighScore") != nil) {
+//            highscore = defaults.object(forKey: "HighScore") as! Int
+//            
+//        }
+//        defaults.synchronize()
+//
+//    
     
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
        // nextQuestion()
+        
+//        let defaults = UserDefaults.standard
+//        defaults.set(highscore, forKey: "HighScore")
+//        
+//        if (defaults.value(forKey: "HighScore") != nil) {
+//            highscore = defaults.object(forKey: "HighScore") as! Int
+//            
+//        }
+//        defaults.synchronize()
+
         
     }
     
@@ -86,6 +112,18 @@ class NewViewController: UIViewController {
             
             VC.finalScore = "\(score + 1) / \(questions.count)"
             VC.score = score + 1
+   //         VC.highscore = highscore
+//            
+//            let defaults = UserDefaults.standard
+//            defaults.set(highscore, forKey: "HighScore")
+//            
+//            if (defaults.value(forKey: "HighScore") != nil) {
+//                highscore = defaults.object(forKey: "HighScore") as! Int
+//                
+//            }
+//            defaults.synchronize()
+
+            
             
         }
     }
