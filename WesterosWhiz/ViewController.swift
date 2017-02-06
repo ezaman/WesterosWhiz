@@ -12,22 +12,22 @@ import UIKit
 class NewViewController: UIViewController {
     
     
- //scenario for whenever a button is tapped, ensuring it is not the last. If it is, segue to total score
+    //scenario for whenever a button is tapped, ensuring it is not the last. If it is, segue to total score
     @IBAction func buttons(_ sender: UIButton) {
-    
+        
         //add animation
-    
-//        UIView.animate(withDuration: 0.1, animations:{
-//            self.btn1.frame.size.width = self.btn1.frame.size.width + 10
-//            self.btn1.frame.size.height = self.btn1.frame.size.height + 10
-//           
-//        })
+        
+        //        UIView.animate(withDuration: 0.1, animations:{
+        //            self.btn1.frame.size.width = self.btn1.frame.size.width + 10
+        //            self.btn1.frame.size.height = self.btn1.frame.size.height + 10
+        //
+        //        })
         
         if sender.tag == Int(answerPlacement) && currentQuestion < 10 {
             
             
             score += 1
-           
+            
             nextQuestion()
             
         } else if (sender.tag != Int(answerPlacement)) && currentQuestion < 10 {
@@ -40,8 +40,8 @@ class NewViewController: UIViewController {
         }
         
     }
-  
-
+    
+    
     @IBOutlet weak var btn1: UIButton!
     @IBOutlet weak var btn2: UIButton!
     @IBOutlet weak var btn3: UIButton!
@@ -67,43 +67,19 @@ class NewViewController: UIViewController {
         btn2.layer.cornerRadius = 6
         btn3.layer.cornerRadius = 6
         
-    //    let defaultss = UserDefaults.standard
         
-   //     highscore = defaultss.object(forKey: "highScore") as! Int
-        
-//        let defaults = UserDefaults.standard
-//        defaults.set(highscore, forKey: "HighScore")
-//        
-//        if (defaults.value(forKey: "HighScore") != nil) {
-//            highscore = defaults.object(forKey: "HighScore") as! Int
-//            
-//        }
-//        defaults.synchronize()
-//
-//    
-    
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       // nextQuestion()
         
-//        let defaults = UserDefaults.standard
-//        defaults.set(highscore, forKey: "HighScore")
-//        
-//        if (defaults.value(forKey: "HighScore") != nil) {
-//            highscore = defaults.object(forKey: "HighScore") as! Int
-//            
-//        }
-//        defaults.synchronize()
-
         
     }
     
     
     
-
-  
+    
+    
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -112,23 +88,11 @@ class NewViewController: UIViewController {
             
             VC.finalScore = "\(score + 1) / \(questions.count)"
             VC.score = score + 1
-   //         VC.highscore = highscore
-//            
-//            let defaults = UserDefaults.standard
-//            defaults.set(highscore, forKey: "HighScore")
-//            
-//            if (defaults.value(forKey: "HighScore") != nil) {
-//                highscore = defaults.object(forKey: "HighScore") as! Int
-//                
-//            }
-//            defaults.synchronize()
-
-            
             
         }
     }
     
-//function to move to the next question
+    //function to move to the next question
     func nextQuestion() {
         
         

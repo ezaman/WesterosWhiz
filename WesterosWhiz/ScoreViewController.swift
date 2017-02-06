@@ -26,7 +26,10 @@ class ScoreViewController: UIViewController {
         if segue.identifier == "highScore" {
             let VC = segue.destination as! HousesViewController
            VC.score = score
-          // VC.highscore = score
+//           VC.highscore = score
+
+      
+
             }
 
     }
@@ -37,10 +40,18 @@ class ScoreViewController: UIViewController {
         scoreLabel.text = "\(score)"
 
         playAgain.layer.cornerRadius = 5
+
+//if score > highscore {
+//
+//highscore = score
+//}
         
-//        if score > highscore {
 //        let defaults = UserDefaults.standard
-//        
+//
+//        if score > defaults.object(forKey: "realScore") as! Int {
+//            
+//        highscore = defaults.set(score, forKey: "realScore") as! Int
+//   
 //
 //        }
 

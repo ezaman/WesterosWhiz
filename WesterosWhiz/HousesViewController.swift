@@ -15,7 +15,7 @@ class HousesViewController: UIViewController {
     
     var score = Int()
     var highscore = Int()
-    var realhighscore = Int()
+    var realhighscore = 0
     
     @IBAction func resetAction(_ sender: Any) {
         score = 0
@@ -135,9 +135,7 @@ class HousesViewController: UIViewController {
         
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
+    override func viewWillAppear(_ animated: Bool) {
         scoreLabel.text = "\(score)"
         
         backgroundVideo()
@@ -146,20 +144,52 @@ class HousesViewController: UIViewController {
         let defaults = UserDefaults.standard
         
         DispatchQueue.main.async {
-        if self.score > self.realhighscore {
-            self.realhighscore = self.score
-            defaults.set(self.realhighscore, forKey: "realScore")
-            defaults.synchronize()
+            if self.score > self.realhighscore {
+                self.realhighscore = self.score
+                self.highScore.text = String(format: "%i", self.score)
+                defaults.set(self.realhighscore, forKey: "realScore")
+                defaults.synchronize()
+                
+                            }
             
-        }
-        
         }
         
         if (defaults.value(forKey: "realScore") != nil) {
             self.realhighscore = defaults.object(forKey: "realScore") as! Int
+            
             self.highScore.text = String(format: "%i", self.realhighscore)
+            
         }
         defaults.synchronize()
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+//        scoreLabel.text = "\(score)"
+//        
+//        backgroundVideo()
+//        
+//        
+//        let defaults = UserDefaults.standard
+//        
+//        DispatchQueue.main.async {
+//        if self.score > self.realhighscore {
+//            self.realhighscore = self.score
+//            defaults.set(self.realhighscore, forKey: "realScore")
+//            defaults.synchronize()
+//            
+//        }
+//        
+//        }
+//        
+//        if (defaults.value(forKey: "realScore") != nil) {
+//            self.realhighscore = defaults.object(forKey: "realScore") as! Int
+//          
+//            self.highScore.text = String(format: "%i", self.realhighscore)
+//            
+//        }
+//        defaults.synchronize()
         
     }
     
