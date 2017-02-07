@@ -11,6 +11,8 @@ import UIKit
 
 class NewViewController: UIViewController {
     
+
+    @IBOutlet weak var questionPic: UIImageView!
     
     //scenario for whenever a button is tapped, ensuring it is not the last. If it is, segue to total score
     @IBAction func buttons(_ sender: UIButton) {
@@ -23,15 +25,59 @@ class NewViewController: UIViewController {
         //
         //        })
         
+        if sender.tag == 1 {
+            UIView.animate(withDuration: 0.1,
+                           animations: {
+                            self.btn1.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
+            },
+                           completion: { _ in
+                            UIView.animate(withDuration: 0.1)
+                            { self.btn1.transform = CGAffineTransform.identity } })
+            
+        }
+        
+        if sender.tag == 2 {
+            UIView.animate(withDuration: 0.1,
+                           animations: {
+                            self.btn2.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
+            },
+                           completion: { _ in
+                            UIView.animate(withDuration: 0.1)
+                            {  self.btn2.transform = CGAffineTransform.identity   }})
+            
+            
+        }
+        if sender.tag == 3 {
+            UIView.animate(withDuration: 0.1,
+                           animations: {
+                            self.btn3.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
+            },
+                           completion: { _ in
+                            UIView.animate(withDuration: 0.1)
+                            { self.btn3.transform = CGAffineTransform.identity } })
+           
+        }
+
+        
         if sender.tag == Int(answerPlacement) && currentQuestion < 10 {
             
             
             score += 1
-            
             nextQuestion()
+            
+            DispatchQueue.main.async{
+           
+          
+            }
             
         } else if (sender.tag != Int(answerPlacement)) && currentQuestion < 10 {
             nextQuestion()
+            
+            DispatchQueue.main.async{
+               
+                
+            }
+            
         }else if sender.tag == Int(answerPlacement) && currentQuestion == 10 {
             
             performSegue(withIdentifier: "scoreLabel", sender: self)
@@ -52,6 +98,8 @@ class NewViewController: UIViewController {
     var questions: [String] = []
     var answers:[[String]] = []
     
+    var images = [UIImage]()
+    var counter = 0
     
     var currentQuestion = 0
     var answerPlacement:UInt32 = 0
@@ -68,11 +116,14 @@ class NewViewController: UIViewController {
         btn3.layer.cornerRadius = 6
         
         
+       
+        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //questionPic.image = #imageLiteral(resourceName: "winterfellcastle.jpg")
         
     }
     
@@ -97,6 +148,8 @@ class NewViewController: UIViewController {
         
         
         self.QuestionLabel.text = self.questions[self.currentQuestion]
+        
+        self.questionPic.image = self.images[self.currentQuestion]
         
         self.answerPlacement = arc4random_uniform(3) + 1
         var button: UIButton = UIButton()

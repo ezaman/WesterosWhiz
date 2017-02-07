@@ -13,8 +13,11 @@ class ScoreViewController: UIViewController {
 
     @IBOutlet weak var scoreLabel: UILabel!
     
+@IBOutlet weak var finalImage: UIImageView!
     @IBOutlet weak var playAgain: UIButton!
    
+@IBOutlet weak var finalLabel: UILabel!
+
     var finalScore = ""
     var score = Int()
     var highscore = Int()
@@ -39,6 +42,15 @@ class ScoreViewController: UIViewController {
         super.viewDidLoad()
         scoreLabel.text = "\(score)"
 
+       if score > 5 {
+        finalLabel.text = "Congrats, the throne is yours"
+        finalImage.image = #imageLiteral(resourceName: "ironeThrone")
+     }else {
+
+        finalLabel.text = "Keep Trying"
+        finalImage.image = #imageLiteral(resourceName: "nedstark")
+        }
+
         playAgain.layer.cornerRadius = 5
 
 //if score > highscore {
@@ -49,9 +61,9 @@ class ScoreViewController: UIViewController {
 //        let defaults = UserDefaults.standard
 //
 //        if score > defaults.object(forKey: "realScore") as! Int {
-//            
+//
 //        highscore = defaults.set(score, forKey: "realScore") as! Int
-//   
+//
 //
 //        }
 

@@ -24,6 +24,30 @@ class HousesViewController: UIViewController {
     }
     //var defaults = UserDefaults.standard
     
+    var starkImages: [UIImage] = [#imageLiteral(resourceName: "stark1"), #imageLiteral(resourceName: "stark2"),
+                             #imageLiteral(resourceName: "stark3"), #imageLiteral(resourceName: "stark4"),
+                             #imageLiteral(resourceName: "stark5"), #imageLiteral(resourceName: "stark6"),
+                             #imageLiteral(resourceName: "stark7"), #imageLiteral(resourceName: "stark8"),
+                             #imageLiteral(resourceName: "stark9"), #imageLiteral(resourceName: "stark10")]
+    
+    var targImages: [UIImage] = [#imageLiteral(resourceName: "stark1"), #imageLiteral(resourceName: "stark2"),
+                                 #imageLiteral(resourceName: "stark3"), #imageLiteral(resourceName: "stark4"),
+                                 #imageLiteral(resourceName: "stark5"), #imageLiteral(resourceName: "stark6"),
+                                 #imageLiteral(resourceName: "stark7"), #imageLiteral(resourceName: "stark8"),
+                                 #imageLiteral(resourceName: "stark9"), #imageLiteral(resourceName: "stark10")]
+    
+    var barImages: [UIImage] = [#imageLiteral(resourceName: "stark1"), #imageLiteral(resourceName: "stark2"),
+                                #imageLiteral(resourceName: "stark3"), #imageLiteral(resourceName: "stark4"),
+                                #imageLiteral(resourceName: "stark5"), #imageLiteral(resourceName: "stark6"),
+                                #imageLiteral(resourceName: "stark7"), #imageLiteral(resourceName: "stark8"),
+                                #imageLiteral(resourceName: "stark9"), #imageLiteral(resourceName: "stark10")]
+    
+    var lannImages: [UIImage] = [#imageLiteral(resourceName: "stark1"), #imageLiteral(resourceName: "stark2"),
+                                 #imageLiteral(resourceName: "stark3"), #imageLiteral(resourceName: "stark4"),
+                                 #imageLiteral(resourceName: "stark5"), #imageLiteral(resourceName: "stark6"),
+                                 #imageLiteral(resourceName: "stark7"), #imageLiteral(resourceName: "stark8"),
+                                 #imageLiteral(resourceName: "stark9"), #imageLiteral(resourceName: "stark10")]
+    
     
     var starkQuestions = ["Where is Winterfell?",
                           "What is the Stark sigil?",
@@ -41,7 +65,7 @@ class HousesViewController: UIViewController {
                         ["Longclaw", "Oathkeeper", "Ice"],
                         ["Brandon Stark", "Edrik Stark", "Eddard Stark"],
                         ["King in the North", "Warden of the North", "Lord of Winterfell"],
-                        ["House Bolton", "House Karstark", "House Tyrell"],
+                        ["House Bolton", "House Karstark", "House Mormont"],
                         ["King Jon I", "King Robb I", "Lord Ramsey"],
                         ["Torrhen Stark", "Benjen Stark","Brandon Stark"],
                         ["8,000+ years", "500 years", "40 years"],
@@ -113,24 +137,30 @@ class HousesViewController: UIViewController {
                             ["Widow's Wail","Dark Sister", "Dawn"],
                             ["Loren","Tommen", "Tybolt"]]
     
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "starkSegue" {
             let VC = segue.destination as! NewViewController
             VC.questions = starkQuestions
             VC.answers = starkAnswers
+            VC.images = starkImages
             
         }else if segue.identifier == "targSegue" {
             let VC = segue.destination as! NewViewController
             VC.questions = targQuestions
             VC.answers = targAnswers
+            VC.images = targImages
         }else if segue.identifier == "lannSegue"{
             let VC = segue.destination as! NewViewController
             VC.questions = lannisterQuestions
             VC.answers = lannisterAnswers
+            VC.images = lannImages
         }else if segue.identifier == "barSegue" {
             let VC = segue.destination as! NewViewController
             VC.questions = baratheonQuestions
             VC.answers = baratheonAnswers
+            VC.images = barImages
         }
         
     }
@@ -159,7 +189,11 @@ class HousesViewController: UIViewController {
             
             self.highScore.text = String(format: "%i", self.realhighscore)
             
+        }else {
+            self.highScore.text = "0"
         }
+        
+        
         defaults.synchronize()
     }
     
