@@ -12,6 +12,10 @@ class HousesViewController: UIViewController {
     
     @IBOutlet weak var highScore: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var btn1: UIButton!
+    @IBOutlet weak var btn2: UIButton!
+    @IBOutlet weak var btn3: UIButton!
+    @IBOutlet weak var btn4: UIButton!
     
     var score = Int()
     var highscore = Int()
@@ -82,7 +86,7 @@ class HousesViewController: UIViewController {
                          "Which king was known as 'King Scab'",
                          "Who was heir of Aerys II?"]
     
-    var targAnswers = [["First ruler of Westeros", "A Blackfyre?", "Essos King"],
+    var targAnswers = [["First ruler of Westeros", "A Blackfyre", "Essos King"],
                        ["3", "2", "1"],
                        ["Tywin Lannister", "Mace Tyrell", "Ricard Stark"],
                        ["Drogon", "Rhaegal", "Viserion"],
@@ -151,6 +155,7 @@ class HousesViewController: UIViewController {
             VC.questions = targQuestions
             VC.answers = targAnswers
             VC.images = targImages
+            
         }else if segue.identifier == "lannSegue"{
             let VC = segue.destination as! NewViewController
             VC.questions = lannisterQuestions
@@ -195,35 +200,14 @@ class HousesViewController: UIViewController {
         
         
         defaults.synchronize()
+        
+        
+        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        scoreLabel.text = "\(score)"
-//        
-//        backgroundVideo()
-//        
-//        
-//        let defaults = UserDefaults.standard
-//        
-//        DispatchQueue.main.async {
-//        if self.score > self.realhighscore {
-//            self.realhighscore = self.score
-//            defaults.set(self.realhighscore, forKey: "realScore")
-//            defaults.synchronize()
-//            
-//        }
-//        
-//        }
-//        
-//        if (defaults.value(forKey: "realScore") != nil) {
-//            self.realhighscore = defaults.object(forKey: "realScore") as! Int
-//          
-//            self.highScore.text = String(format: "%i", self.realhighscore)
-//            
-//        }
-//        defaults.synchronize()
+
         
     }
     
@@ -243,21 +227,49 @@ class HousesViewController: UIViewController {
         view.addSubview(imageView)
         
         
-        //        let filePath = Bundle.main.path(forResource: "got3", ofType: "gif")
-        //        let gif = NSData(contentsOfFile: filePath!)
-        //
-        //        let webViewBG = UIWebView(frame: self.view.frame)
-        //        webViewBG.load(gif! as Data, mimeType: "image/gif", textEncodingName: String(), baseURL: NSURL() as URL)
-        //
-        //        webViewBG.isUserInteractionEnabled = false;
-        //        self.view.addSubview(webViewBG)
-        //
-        //        let filter = UIView()
-        //        filter.frame = self.view.frame
-        //        //filter.backgroundColor = UIColor.black
-        //        filter.alpha = 0.01
-        //        self.view.addSubview(filter)
     }
+    
+    @IBAction func button1(_ sender: Any) {
+        
+        UIView.animate(withDuration: 0.1,
+                       animations: {
+                        self.btn1.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
+        },
+                       completion: { _ in
+                        UIView.animate(withDuration: 0.1)
+                        {  self.btn1.transform = CGAffineTransform.identity   }})
+    }
+    
+    @IBAction func button2(_ sender: Any) {
+        UIView.animate(withDuration: 0.1,
+                       animations: {
+                        self.btn2.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
+        },
+                       completion: { _ in
+                        UIView.animate(withDuration: 0.1)
+                        {  self.btn2.transform = CGAffineTransform.identity   }})
+    }
+  
+    @IBAction func button3(_ sender: Any) {
+        UIView.animate(withDuration: 0.1,
+                       animations: {
+                        self.btn3.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
+        },
+                       completion: { _ in
+                        UIView.animate(withDuration: 0.1)
+                        {  self.btn3.transform = CGAffineTransform.identity   }})
+    }
+    
+    @IBAction func button4(_ sender: Any) {
+//        UIView.animate(withDuration: 0.1,
+//                       animations: {
+//                        self.btn4.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
+//        },
+//                       completion: { _ in
+//                        UIView.animate(withDuration: 0.1)
+//                        {  self.btn4.transform = CGAffineTransform.identity   }})
+    }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

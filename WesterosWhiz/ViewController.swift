@@ -19,34 +19,34 @@ class NewViewController: UIViewController {
         
         
         if sender.tag == 1 {
-            UIView.animate(withDuration: 0.1,
+            UIView.animate(withDuration: 0.05,
                            animations: {
-                            self.btn1.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
+                            self.btn1.transform = CGAffineTransform(scaleX: 0.95, y: 0.95)
             },
                            completion: { _ in
-                            UIView.animate(withDuration: 0.1)
+                            UIView.animate(withDuration: 0.05)
                             { self.btn1.transform = CGAffineTransform.identity } })
             
         }
         
         if sender.tag == 2 {
-            UIView.animate(withDuration: 0.1,
+            UIView.animate(withDuration: 0.05,
                            animations: {
-                            self.btn2.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
+                            self.btn2.transform = CGAffineTransform(scaleX: 0.95, y: 0.95)
             },
                            completion: { _ in
-                            UIView.animate(withDuration: 0.1)
+                            UIView.animate(withDuration: 0.05)
                             {  self.btn2.transform = CGAffineTransform.identity   }})
             
             
         }
         if sender.tag == 3 {
-            UIView.animate(withDuration: 0.1,
+            UIView.animate(withDuration: 0.05,
                            animations: {
-                            self.btn3.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
+                            self.btn3.transform = CGAffineTransform(scaleX: 0.95, y: 0.95)
             },
                            completion: { _ in
-                            UIView.animate(withDuration: 0.1)
+                            UIView.animate(withDuration: 0.05)
                             { self.btn3.transform = CGAffineTransform.identity } })
            
         }
