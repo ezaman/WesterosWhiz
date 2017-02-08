@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F3323B71E4A856500A15209 /* backgroundd.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F3323B61E4A856500A15209 /* backgroundd.jpg */; };
+		8F3323BB1E4A87D200A15209 /* sword1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F3323BA1E4A87D200A15209 /* sword1.png */; };
+		8F3323BF1E4A884A00A15209 /* sword2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F3323BE1E4A884A00A15209 /* sword2.png */; };
+		8F3323C11E4A8FB000A15209 /* westeroswhiz.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F3323C01E4A8FB000A15209 /* westeroswhiz.png */; };
+		8F3323C31E4A9EDD00A15209 /* westwhiz2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F3323C21E4A9EDD00A15209 /* westwhiz2.png */; };
 		8F5049CB1E21E64B00A46856 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5049CA1E21E64B00A46856 /* AppDelegate.swift */; };
 		8F5049CD1E21E64B00A46856 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5049CC1E21E64B00A46856 /* ViewController.swift */; };
 		8F5049D31E21E64B00A46856 /* WesterosWhiz.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8F5049D11E21E64B00A46856 /* WesterosWhiz.xcdatamodeld */; };
@@ -28,6 +33,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8F3323B61E4A856500A15209 /* backgroundd.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = backgroundd.jpg; sourceTree = "<group>"; };
+		8F3323BA1E4A87D200A15209 /* sword1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sword1.png; sourceTree = "<group>"; };
+		8F3323BE1E4A884A00A15209 /* sword2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sword2.png; sourceTree = "<group>"; };
+		8F3323C01E4A8FB000A15209 /* westeroswhiz.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = westeroswhiz.png; sourceTree = "<group>"; };
+		8F3323C21E4A9EDD00A15209 /* westwhiz2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = westwhiz2.png; sourceTree = "<group>"; };
 		8F5049C71E21E64B00A46856 /* WesterosWhiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WesterosWhiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F5049CA1E21E64B00A46856 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F5049CC1E21E64B00A46856 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -89,9 +99,14 @@
 				8F5049F91E25DA0300A46856 /* Main.storyboard */,
 				8F5049D41E21E64B00A46856 /* Assets.xcassets */,
 				8F5049D61E21E64B00A46856 /* LaunchScreen.storyboard */,
+				8F3323B61E4A856500A15209 /* backgroundd.jpg */,
 				8F5049EF1E22079C00A46856 /* baratheonStag.png */,
+				8F3323BA1E4A87D200A15209 /* sword1.png */,
+				8F3323BE1E4A884A00A15209 /* sword2.png */,
 				8F6547221E3195700082A517 /* targLast.png */,
 				8F5049ED1E22079600A46856 /* lannisterLogo.png */,
+				8F3323C01E4A8FB000A15209 /* westeroswhiz.png */,
+				8F3323C21E4A9EDD00A15209 /* westwhiz2.png */,
 				8F5049EB1E22078B00A46856 /* starkLogo.png */,
 				8F6547161E31896C0082A517 /* Lannister_2-01.png */,
 				8F6547261E319E990082A517 /* barNew.png */,
@@ -164,13 +179,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F6547251E319E820082A517 /* starkNew.png in Resources */,
+				8F3323C11E4A8FB000A15209 /* westeroswhiz.png in Resources */,
 				8F5049D81E21E64B00A46856 /* LaunchScreen.storyboard in Resources */,
 				8F5049FA1E25DA0300A46856 /* Main.storyboard in Resources */,
+				8F3323BB1E4A87D200A15209 /* sword1.png in Resources */,
+				8F3323B71E4A856500A15209 /* backgroundd.jpg in Resources */,
 				8F6547231E3195700082A517 /* targLast.png in Resources */,
 				8F5049D51E21E64B00A46856 /* Assets.xcassets in Resources */,
 				8F6547171E31896C0082A517 /* Lannister_2-01.png in Resources */,
 				8F5049EE1E22079600A46856 /* lannisterLogo.png in Resources */,
+				8F3323BF1E4A884A00A15209 /* sword2.png in Resources */,
 				8F6547151E3180220082A517 /* dragons2.gif in Resources */,
+				8F3323C31E4A9EDD00A15209 /* westwhiz2.png in Resources */,
 				8F5049EC1E22078B00A46856 /* starkLogo.png in Resources */,
 				8F6547271E319E990082A517 /* barNew.png in Resources */,
 				8F5049F01E22079C00A46856 /* baratheonStag.png in Resources */,

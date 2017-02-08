@@ -34,23 +34,23 @@ class HousesViewController: UIViewController {
                              #imageLiteral(resourceName: "stark7"), #imageLiteral(resourceName: "stark8"),
                              #imageLiteral(resourceName: "stark9"), #imageLiteral(resourceName: "stark10")]
     
-    var targImages: [UIImage] = [#imageLiteral(resourceName: "stark1"), #imageLiteral(resourceName: "stark2"),
-                                 #imageLiteral(resourceName: "stark3"), #imageLiteral(resourceName: "stark4"),
-                                 #imageLiteral(resourceName: "stark5"), #imageLiteral(resourceName: "stark6"),
-                                 #imageLiteral(resourceName: "stark7"), #imageLiteral(resourceName: "stark8"),
-                                 #imageLiteral(resourceName: "stark9"), #imageLiteral(resourceName: "stark10")]
+    var targImages: [UIImage] = [#imageLiteral(resourceName: "targ1"), #imageLiteral(resourceName: "targ2"),
+                                 #imageLiteral(resourceName: "targ3"), #imageLiteral(resourceName: "targ4"),
+                                 #imageLiteral(resourceName: "targ5"), #imageLiteral(resourceName: "targ6"),
+                                 #imageLiteral(resourceName: "targ7"), #imageLiteral(resourceName: "targ8"),
+                                 #imageLiteral(resourceName: "targ9"), #imageLiteral(resourceName: "targ10")]
     
-    var barImages: [UIImage] = [#imageLiteral(resourceName: "stark1"), #imageLiteral(resourceName: "stark2"),
-                                #imageLiteral(resourceName: "stark3"), #imageLiteral(resourceName: "stark4"),
-                                #imageLiteral(resourceName: "stark5"), #imageLiteral(resourceName: "stark6"),
-                                #imageLiteral(resourceName: "stark7"), #imageLiteral(resourceName: "stark8"),
-                                #imageLiteral(resourceName: "stark9"), #imageLiteral(resourceName: "stark10")]
+    var barImages: [UIImage] = [#imageLiteral(resourceName: "bar1"), #imageLiteral(resourceName: "bar2"),
+                                #imageLiteral(resourceName: "bar3"), #imageLiteral(resourceName: "bar4"),
+                                #imageLiteral(resourceName: "bar5"), #imageLiteral(resourceName: "bar6"),
+                                #imageLiteral(resourceName: "bar7"), #imageLiteral(resourceName: "bar8"),
+                                #imageLiteral(resourceName: "bar9"), #imageLiteral(resourceName: "bar10")]
     
-    var lannImages: [UIImage] = [#imageLiteral(resourceName: "stark1"), #imageLiteral(resourceName: "stark2"),
-                                 #imageLiteral(resourceName: "stark3"), #imageLiteral(resourceName: "stark4"),
-                                 #imageLiteral(resourceName: "stark5"), #imageLiteral(resourceName: "stark6"),
-                                 #imageLiteral(resourceName: "stark7"), #imageLiteral(resourceName: "stark8"),
-                                 #imageLiteral(resourceName: "stark9"), #imageLiteral(resourceName: "stark10")]
+    var lannImages: [UIImage] = [#imageLiteral(resourceName: "lann1"), #imageLiteral(resourceName: "lann2"),
+                                 #imageLiteral(resourceName: "lann3"), #imageLiteral(resourceName: "lann4"),
+                                 #imageLiteral(resourceName: "lann5"), #imageLiteral(resourceName: "lann6"),
+                                 #imageLiteral(resourceName: "lann7"), #imageLiteral(resourceName: "lann8"),
+                                 #imageLiteral(resourceName: "lann9"), #imageLiteral(resourceName: "lann10")]
     
     
     var starkQuestions = ["Where is Winterfell?",
@@ -83,7 +83,7 @@ class HousesViewController: UIViewController {
                          "How many Targaryens sat on the Iron Throne?",
                          "Who killed Aerys II?",
                          "Who was the longest reigning king?",
-                         "Which king was known as 'King Scab'",
+                         "Which king was known as 'King Scab'?",
                          "Who was heir of Aerys II?"]
     
     var targAnswers = [["First ruler of Westeros", "A Blackfyre", "Essos King"],
@@ -112,7 +112,7 @@ class HousesViewController: UIViewController {
          ["Avenge Lyanna's Disappearance","Murder of his father", "For power"],
          ["Prince Rhaegar", "Daemon Blackfyre","Viserys"],
          ["Robert's bastard", "A squire", "Lord of Harrenhal"],
-         ["Stag", "Bear", "Horse"],
+         ["Stag", "Bear", "Fish"],
          ["Lady Olenna", "Tyrion", "Robb Stark", "Melissandre"],
          ["300 years old", "3,000 years old", "20 years old"],
          ["Stormlands","Riverlands","Vale"],
@@ -122,7 +122,7 @@ class HousesViewController: UIViewController {
     var lannisterQuestions = ["Who founded House Lannister?",
                               "Who is the current ruler of House Lannister?",
                               "What is the Lannister ancestral seat?",
-                              "What is the Lannister sigil?",
+                              "What is the Lannister sigil animal?",
                               "What is the official house motto?",
                               "Who is the heir of House Lannister?",
                               "How large is the Lannister army?",
@@ -131,11 +131,11 @@ class HousesViewController: UIViewController {
                               "Who was the last Lannister king?"]
     
     var lannisterAnswers = [["Lann", "Lancel I", "Tygrid"],
-                            ["Cersei I", "Tywin", "Jaime"],
+                            ["Cersei", "Tywin", "Jaime"],
                             ["Casterly Rock", "Dragonstone", "Red Keep"],
                             ["Lion", "Jaguar", "Tiger"],
                             ["Hear me roar!", "Ours is the Fury", "Family,Duty, Honor"],
-                            ["Jaime","Tommen", "Mycela"],
+                            ["Jaime","Tommen", "Myrcella"],
                             ["60,000","100,000","20,000"],
                             ["Tyrion", "Varys", "Lady Olenna"],
                             ["Widow's Wail","Dark Sister", "Dawn"],

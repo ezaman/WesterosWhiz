@@ -43,15 +43,15 @@ class ScoreViewController: UIViewController {
         scoreLabel.text = "\(score)"
 
        if score > 5 {
-        finalLabel.text = "Congrats, the throne is yours"
+        finalLabel.text = "Congrats, the throne is yours!"
         finalImage.image = #imageLiteral(resourceName: "ironeThrone")
      }else {
 
-        finalLabel.text = "Keep Trying"
+        finalLabel.text = "All men must die. Keep Trying."
         finalImage.image = #imageLiteral(resourceName: "nedstark")
         }
 
-        playAgain.layer.cornerRadius = 5
+        playAgain.layer.cornerRadius = 10
 
 //if score > highscore {
 //

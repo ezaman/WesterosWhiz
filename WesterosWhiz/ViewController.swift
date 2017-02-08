@@ -11,6 +11,7 @@ import UIKit
 
 class NewViewController: UIViewController {
     
+    @IBOutlet weak var backgroundQues: UIImageView!
 
     @IBOutlet weak var questionPic: UIImageView!
     
@@ -109,7 +110,6 @@ class NewViewController: UIViewController {
         btn3.layer.cornerRadius = 6
         
         
-       
         
     }
     
@@ -143,6 +143,7 @@ class NewViewController: UIViewController {
         self.QuestionLabel.text = self.questions[self.currentQuestion]
         
         self.questionPic.image = self.images[self.currentQuestion]
+       
         
         self.answerPlacement = arc4random_uniform(3) + 1
         var button: UIButton = UIButton()
@@ -164,6 +165,19 @@ class NewViewController: UIViewController {
         
     }
     
+}
+
+extension UIImageView
+{
+    func makeBlurImage(targetImageView:UIImageView?)
+    {
+        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.dark)
+        let blurEffectView = UIVisualEffectView(effect: blurEffect)
+        blurEffectView.frame = targetImageView!.bounds
+        
+        blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight] // for supporting device rotation
+       targetImageView?.addSubview(blurEffectView)
+    }
 }
 
 
